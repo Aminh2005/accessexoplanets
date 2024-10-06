@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONICLES OF EXOPLANET</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* NAVIGATION MENU STARTS */
+        body {
+            background: url(Images/pegasi\ background.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .nav {
+            background-color: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .soicallogo {
+            height: 2rem;
+            width: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: #03777D;
+            margin: 4px;
+        }
+
+        .item {
+            display: block;
+            margin: 0px 10px 10px 10px;
+            color: white;
+            transition: all .5s ease-in-out;
+        }
+
+        .active,
+        .item:hover {
+            font-weight: 700;
+            font-size: 1.2rem;
+            background-color: #7c8289a1;
+            border-radius: 20px;
+            display: block;
+            color: white;
+            margin: 0px 10px 10px 10px;
+            padding: 10px 15px;
+        }
+
+        .infoboxplanet {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            padding: 13px;
+            border-bottom: 2px solid whitesmoke;
+        }
+
+        .keplercontent {
+            background: url(Images/peagasi_b-removebg-preview.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            animation: move 10s 1s forwards;
+            /* background-size: 50vh; */
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .box {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 25px;
+            background: white;
+            opacity: .6;
+            margin: 3%;
+        }
+
+        @keyframes move {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            100% {
+                background-position: 50% 50%;
+            }
+        }
+
+        .planetinfo {
+            margin: 2rem 0;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .h1 {
+            color: white;
+        }
+
+        .pp {
+            color: black;
+            font-size: 1.2rem;
+        }
+
+        .h33 {
+            color: black;
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        .planet-video {
+            display: flex;
+            justify-content: center;
+        }
+
+        #planet-video {
+            border-radius: 30px;
+        }
+
+        @media(max-width:1002px) {
+            .keplercontent {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .div1 {
+                width: auto;
+            }
+        }
+
+        @media(max-width:768px) {
+
+            ul {
+                display: none;
+                flex-direction: column;
+                background-color: tomato;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                width: 150px;
+                border-radius: 5px;
+            }
+
+            ul.active {
+                display: flex;
+            }
+
+            li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            ul li a {
+                background-color: black;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .planetinfo {
+                margin: 0;
+                padding: 0;
+            }
+
+            .box {
+                width: auto;
+            }
+
+            .boxes {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* NAVIGATION MENU ENDS */
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Menu Start -->
+    <div>
+        <nav class="nav">
+            <div class="title" style="font-size: 1.3rem; font-weight: 700;">
+                <h3>CHRONICLES OF EXOPLANET</h3>
+            </div>
+            <ul>
+                <li><a href="index.html" class="item">HOME</a></li>
+                <li><a href="kepler.html" class="item">KEPLER 452 b</a></li>
+                <li><a href="pegassi.html" class="active">51 PEGASSI b</a></li>
+                <li><a href="canceri.html" class="item">55 CANCERI e</a></li>
+                <li><a href="hd.html" class="item">HD 189733b</a></li>
+            </ul>
+            <div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </nav>
+    </div>
+    <!-- Navigation Menu End -->
+    <div class="div2">
+        <div class="keplercontent">
+            <div class="div1">
+                <h1>51 PEGASI B - ALSO KNOWN AS</h1>
+                <p>"Dimidium"</p>
+            </div>
+            <div class="info">
+                <div class="infoboxplanet">
+                    <h3>Discovery</h3>
+                    <p> 1995</p>
+                </div>
+                <div class="infoboxplanet">
+                    <h3>Distance</h3>
+                    <p>50.9 Light Years</p>
+                </div>
+                <div class="infoboxplanet">
+                    <h3>Orbital Completion</h3>
+                    <p>4.2 Days</p>
+                </div>
+                <div class="infoboxplanet">
+                    <h3>Constellation</h3>
+                    <p> Pegasus</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="planet-video">
+        <video autoplay controls loop id="planet-video">
+            <source src="Images/pegasi video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="planetinfo">
+        <div id="planetheading">
+            <h1 class="h1">51 Pegasi b</h1>
+            <h3>51 Pegasi b, also known as Dimidium, is a gas giant exoplanet orbiting the Sun-like star 51 Pegasi. Its
+                discovery in 1995 marked a groundbreaking moment in astronomy, as it was the first exoplanet to be
+                confirmed orbiting a main-sequence star.
+            </h3>
+        </div>
+
+
+        <div class="boxes">
+            <div class="box">
+                <h3 class="h33">Is it habitable?</h3>
+                <p class="pp"><b>Key Characteristics</b><br>
+                    <b>Type:</b> Gas giant <br>
+                    <b>Mass:</b> Approximately half that of Jupiter <br>
+                    <b>Orbital Distance:</b> Very close to its star, making it a "Hot Jupiter" <br>
+                    <b>Temperature:</b> Estimated to be around 1,000-1,800 degrees Fahrenheit (538-982 degrees Celsius)
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Significant Discoveries</h3>
+                <p class="pp"><b>First Exoplanet around a Sun-like Star:</b> Its discovery revolutionized our
+                    understanding of planetary systems beyond our own. <br>
+                    <b>Hot Jupiter Paradigm: </b>51 Pegasi b became the prototype for a class of exoplanets known as
+                    "hot Jupiters," gas giants orbiting their stars at very close distances. <br>
+                    <b>Nobel Prize:</b> The discovery of 51 Pegasi b was recognized with the Nobel Prize in Physics in
+                    2019 for Michel Mayor and Didier Queloz, the astronomers who made the initial detection. <br>
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Atmospheric Composition</h3>
+                <p class="pp">Scientists are studying the planet's atmosphere to learn more about its chemical
+                    composition and potential for habitability.</p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Formation and Evolution</h3>
+                <p class="pp">Researchers are investigating how 51 Pegasi b formed and how its orbit has evolved over
+                    time.</p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Structure and Minerals</h3>
+                <p class="pp">Due to its gaseous nature, 51 Pegasi b does not have a solid surface. However, its
+                    interior is likely composed of layers of hydrogen, helium, and possibly heavier elements.
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Magnetic Field</h3>
+                <p class="pp">The presence of a magnetic field on 51 Pegasi b has not been definitively confirmed. If it
+                    exists, it would likely be generated by the planet's rapid rotation and internal currents.
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Habitability Assessment:
+                </h3>
+                <p class="pp">Based on these factors, it is clear that 51 Pegasi b is not a habitable planet. Its high
+                    temperature, lack of liquid water, and distance from the habitable zone make it unsuitable for life
+                    as we know it. However, the study of 51 Pegasi b has provided valuable insights into the formation
+                    and evolution of exoplanetary systems, and it continues to be a subject of ongoing research.
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Characteristics</h3>
+                <p class="pp"> <b>Rotation:</b> 51 Pegasi b's rotation rate has not been precisely measured, but it is
+                    likely to be relatively fast due to its proximity to its star.
+                    <br>
+                    <b>Orbital Completion:</b> Undulating curtains, swirling vortex-like structures, and diffuse glows.
+                    <br>
+                    <b>Aurora:</b> Auroras are unlikely to occur on 51 Pegasi b due to its lack of a solid surface and
+                    atmosphere.
+                    <br>
+                    <b>Rotation: </b> 51 Pegasi b's rotation rate has not been precisely measured, but it is likely to
+                    be relatively fast due to its proximity to its star.
+                    <br>
+                </p>
+            </div>
+        </div>
+        <div><a href="https://quizizz.com/admin/quiz/670253416940c9132874727b"><button style="border-radius: 15px; padding: 1rem;">QUIZ</button></a></div>
+
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('ul');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+
+</body>
+
+</html>

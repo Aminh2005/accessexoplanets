@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Video container styling */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Sends the video to the background */
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+/* Content styling */
+.content, .keplercontent {
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div1{
+    width: 38%;
+    padding: 2rem;
+    border: 2px solid;
+    margin: 2rem;
+    text-align: left;
+    border-radius: 50px;
+}
+
+.info{
+    margin: 2rem;
+    padding: 2rem;
+}
+.infobox{
+    background: #ffffff69;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    padding: 13px;
+    border-radius: 50px;
+}
+h1 {
+    font-size: 4rem;
+    margin-bottom: 12px;
+    color: #ffbf00;
+}
+h3{
+    color: white;
+}
+p {
+    color: white;
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+}

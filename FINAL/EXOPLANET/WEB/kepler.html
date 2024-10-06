@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONICLES OF EXOPLANET</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* NAVIGATION MENU STARTS */
+        body {
+            background: url(Images/kepler\ background.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .nav {
+            background-color: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .soicallogo {
+            height: 2rem;
+            width: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: #03777D;
+            margin: 4px;
+        }
+
+        .item {
+            display: block;
+            margin: 0px 10px 10px 10px;
+            color: white;
+            transition: all .5s ease-in-out;
+        }
+
+        .active,
+        .item:hover {
+            font-weight: 700;
+            font-size: 1.2rem;
+            background-color: #7c8289a1;
+            border-radius: 20px;
+            display: block;
+            color: white;
+            margin: 0px 10px 10px 10px;
+            padding: 10px 15px;
+        }
+
+        .infoboxplanet {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            padding: 13px;
+            border-bottom: 2px solid whitesmoke;
+        }
+
+        .keplercontent {
+            background: url(Images/kepler.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            animation: move 10s 1s forwards;
+            /* background-size: 50vh; */
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .box {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 25px;
+            background: black;
+            opacity: .6;
+            margin: 3%;
+        }
+
+        @keyframes move {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            100% {
+                background-position: 50% 50%;
+            }
+        }
+
+        .planetinfo {
+            margin: 2rem 0;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .h1 {
+            color: white;
+        }
+
+        .pp {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .h33 {
+            color: white;
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+        .planet-video{
+            display: flex;
+            justify-content: center;
+        }
+        #planet-video{
+            border-radius: 30px;
+        }
+        @media(max-width:1002px) {
+            .keplercontent {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .div1 {
+                width: auto;
+            }
+        }
+
+        @media(max-width:768px) {
+
+            ul {
+                display: none;
+                flex-direction: column;
+                background-color: tomato;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                width: 150px;
+                border-radius: 5px;
+            }
+
+            ul.active {
+                display: flex;
+            }
+
+            li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            ul li a {
+                background-color: black;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .planetinfo {
+                margin: 0;
+                padding: 0;
+            }
+
+            .box {
+                width: auto;
+            }
+
+            .boxes {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* NAVIGATION MENU ENDS */
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Menu Start -->
+    <div>
+        <nav class="nav">
+            <div class="title" style="font-size: 1.3rem; font-weight: 700;">
+                <h3>CHRONICLES OF EXOPLANET</h3>
+            </div>
+            <ul>
+                <li><a href="index.html" class="item">HOME</a></li>
+                <li><a href="kepler.html" class="active">KEPLER 452 b</a></li>
+                <li><a href="pegassi.html" class="item">51 PEGASSI b</a></li>
+                <li><a href="canceri.html" class="item">55 CANCERI e</a></li>
+                <li><a href="hd.html" class="item">HD 189733b</a></li>
+            </ul>
+            <div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </nav>
+    </div>
+    <!-- Navigation Menu End -->
+    <div class="div2">
+        <div class="keplercontent">
+            <div class="div1">
+                <h1>KEPLER 452 B - ALSO KNOWN AS</h1>
+                <p>"Super Earth"</p>
+            </div>
+            <div class="info">
+                <div class="infoboxplanet">
+                    <h3>Discovery</h3>
+                    <p>23 July 2015</p>
+                </div>
+                <div class="infoboxplanet">
+                    <h3>Distance</h3>
+                    <p>1400 Ligh Years</p>
+                </div>
+                <div class="infoboxplanet">
+                    <h3>Rotation Period</h3>
+                    <p>20-40 Days</p>
+                </div>
+                <div class="infoboxplanet">
+                    <h3>Year Length</h3>
+                    <p>285 Earth Days</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="planet-video">
+        <video autoplay controls loop id="planet-video">
+            <source src="Images/kepler video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="planetinfo">
+        <div id="planetheading">
+            <h1 class="h1">KEPLER 452 b</h1>
+            <!-- <h3>Discover a World of Flavors</h3> -->
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <h3 class="h33">Is it habitable?</h3>
+                <p class="pp">It is the first potentially rocky super-Earth planet discovered orbiting within the
+                    habitable zone of a very Sun-like star. However, it is unknown if it is entirely habitable</p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Environment climate</h3>
+                <p class="pp">its climate state can readily reach the runaway greenhouse limit as greenhouse
+                    concentration is higher.
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Land and fertile</h3>
+                <p class="pp">However, it's essential to note that Kepler-452b receives about 10% more energy from its
+                    star than Earth receives from the Sun, which could lead to a runaway greenhouse effect ². This
+                    effect might impact the planet's habitability and fertility.</p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Assumed Gas Components</h3>
+                <p class="pp">
+                    1. Nitrogen (N2): 50-80% <br>
+                    2. Oxygen (O2): 10-30% <br>
+                    3. Carbon dioxide (CO2): 5-15% <br>
+                    4. Water vapor (H2O): 5-10% <br>
+                    5. Methane (CH4): 1-5% <br>
+                    6. Argon (Ar): 1-2% <br>
+                    7. Helium (He): 0.5-1%
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Constellation sorrounding</h3>
+                <p class="pp">Kepler-452b is located in the constellation Cygnus, about 1,400 light-years away from
+                    Earth ¹ ². To give you a better idea, Cygnus is a beautiful swan-shaped constellation in the
+                    northern sky, named after the Latin word for "swan." It's also home to many other fascinating
+                    celestial objects, including the North America Nebula and the X-ray binary star system, Cygnus X-1.
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Sky looks like</h3>
+                <p class="pp">Kepler-452b's sky would be vastly different from Earth's due to its unique location and
+                    atmospheric conditions. Here's a hypothetical representation:
+                    <br>
+                    <br>
+                    <b>Daytime Sky: </b>
+                    <br>
+                    1. Color: Deep blue to violet, due to the star's G-type spectrum (similar to the Sun). <br>
+                    2. Brightness: About 10% brighter than Earth's sky. <br>
+                    3. Star appearance: Kepler-452, the parent star, would appear 1.3 times larger than our Sun. <br>
+                    <br>
+                    <b>Nighttime Sky:</b><br>
+                    <br>
+
+                    1. Constellations: Unrecognizable from Earth's constellations due to Kepler-452b's different vantage
+                    point. <br>
+                    2. Star density: More stars visible due to the planet's location in the Milky Way's galactic plane. <br>
+                    3. Planetary visibility: Nearby planets in the Kepler-452 system would be visible, potentially with
+                    unique configurations. <br>
+
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Structure</h3>
+                <p class="pp">Kepler-452b's structure is inferred based on its size, mass, and orbital characteristics.</p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Aurora Characteristics</h3>
+                <p class="pp"> <b>Color:</b> Vibrant green, blue, and red hues due to excited oxygen and nitrogen atoms. <br>
+                    -<b>Pattern</b> Undulating curtains, swirling vortex-like structures, and diffuse glows. <br>
+                    -<b>Intensity:</b> Brighter than Earth's aurora borealis (northern lights) due to Kepler-452b's stronger magnetic field. <br>
+                    -<b> Frequency:</b> Occasional, coinciding with solar flares and coronal mass ejections.
+                    <br>
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Magnetic Field Properties</h3>
+                <p class="pp">-<b>Strength:</b> 2-5 times Earth's magnetic field. <br>
+                    -<b>Configuration:</b> Dipolar, with a tilted axis. <br>
+                    -<b>Reconnection Events:</b> Frequent, leading to spectacular aurora displays. <br></p>
+            </div>
+        </div>
+        <div><a href="https://quizizz.com/admin/quiz/670250d7cf3ef077ed991b0e"><button style="border-radius: 15px; padding: 1rem;">QUIZ</button></a></div>
+
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('ul');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+
+</body>
+
+</html>

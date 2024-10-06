@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONICLES OF EXOPLANET</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* NAVIGATION MENU STARTS */
+        body {
+            background: url(Images/cancri\ background.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .nav {
+            background-color: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .soicallogo {
+            height: 2rem;
+            width: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: #03777D;
+            margin: 4px;
+        }
+
+        .item {
+            display: block;
+            margin: 0px 10px 10px 10px;
+            color: white;
+            transition: all .5s ease-in-out;
+        }
+
+        .active,
+        .item:hover {
+            font-weight: 700;
+            font-size: 1.2rem;
+            background-color: #7c8289a1;
+            border-radius: 20px;
+            display: block;
+            color: white;
+            margin: 0px 10px 10px 10px;
+            padding: 10px 15px;
+        }
+
+        .infoboxplanet {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            padding: 13px;
+            border-bottom: 2px solid whitesmoke;
+        }
+
+        .keplercontent {
+            background: url(Images/55cancri_e-removebg-preview.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            animation: move 10s 1s forwards;
+            /* background-size: 50vh; */
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .box {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 25px;
+            background: white;
+            opacity: .5;
+            margin: 3%;
+        }
+
+        @keyframes move {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            100% {
+                background-position: 50% 50%;
+            }
+        }
+
+        .planetinfo {
+            margin: 2rem 0;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .h1 {
+            color: white;
+        }
+
+        .pp {
+            color: black;
+            font-size: 1.2rem;
+        }
+
+        .h33 {
+            color: black;
+            margin: 1rem 0;
+            font-size: 1.5rem;
+        }
+        .planet-video{
+            display: flex;
+            justify-content: center;
+        }
+        #planet-video{
+            border-radius: 30px;
+        }
+        @media(max-width:1002px) {
+            .keplercontent {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .div1 {
+                width: auto;
+            }
+        }
+
+        @media(max-width:768px) {
+
+            ul {
+                display: none;
+                flex-direction: column;
+                background-color: tomato;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                width: 150px;
+                border-radius: 5px;
+            }
+
+            ul.active {
+                display: flex;
+            }
+
+            li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            ul li a {
+                background-color: black;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .planetinfo {
+                margin: 0;
+                padding: 0;
+            }
+
+            .box {
+                width: auto;
+            }
+
+            .boxes {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* NAVIGATION MENU ENDS */
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Menu Start -->
+    <div>
+        <nav class="nav">
+            <div class="title" style="font-size: 1.3rem; font-weight: 700;">
+                <h3>CHRONICLES OF EXOPLANET</h3>
+            </div>
+            <ul>
+                <li><a href="index.html" class="item">HOME</a></li>
+                <li><a href="kepler.html" class="item">KEPLER 452 b</a></li>
+                <li><a href="pegassi.html" class="item">51 PEGASSI b</a></li>
+                <li><a href="cenceri.html" class="active">55 CANCERI e</a></li>
+                <li><a href="hd.html" class="item">HD 189733b</a></li>
+            </ul>
+            <div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </nav>
+    </div>
+    <!-- Navigation Menu End -->
+    <div class="div2">
+        <div class="keplercontent">
+            <div class="div1">
+                <h1>55 CANCERI E - ALSO KNOWN AS</h1>
+                <p>"The Diamond Planet"</p>
+            </div>
+            <div class="info">
+                <div class="infoboxplanet">
+                    <h3>Discovery</h3>
+                    <p>2004</p>
+                </div>
+                <div class="infoboxplanet">
+                    <h3>Distance</h3>
+                    <p>41 Light Years</p>
+                </div>
+                <div class="infoboxplanet">
+                    <h3>Rotation</h3>
+                    <p>18 hours</p>
+                </div>
+                <div class="infoboxplanet">
+                    <h3>Solar System</h3>
+                    <p>55 Cancri system</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="planet-video">
+        <video autoplay controls loop id="planet-video">
+            <source src="Images/canceri video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="planetinfo">
+        <div id="planetheading">
+            <h1 class="h1">55 CANCERI E </h1>
+            <h3>This super-Earth offers insights into planetary formation and composition
+            </h3>
+        </div>
+
+
+        <div class="boxes">
+            <div class="box">
+                <h3 class="h33">Key Characteristics</h3>
+                    <b>Habitability:</b> No, extreme temperatures.<br><br>
+                    <b>Land:</b> Rocky surface, possible diamond composition.<br><br>
+                    <b>Gases:</b> Carbon dioxide, nitrogen, helium.<br><br>
+                    <b>Constellation: </b>Cancer <br><br>
+                    <b>Sky Appearance: </b>Red-orange due to star's color. <br><br>
+                    <b>Structure: </b>Solid surface, iron core, silicate crust. <br><br>
+                    <b>Magnetic Field Aurora: </b>Weak, possible induction from star. <br><br>
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">More Quick Facts</h3>
+                    <b>Mass:</b> 8.6 Earth masses<br><br>
+                    <b>Radius:</b> 2.17 Earth radii<br><br>
+                    <b>Temperature:</b>Surface temperature 3,900°F (2,148°C)<br> <br>
+                    <b>Star type: </b> G8V (yellow dwarf)
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="h33">Also Known For</h3>
+                    1. Tidal locking (one side constantly faces star) <br>
+                    2. Possible diamond composition <br>
+                    3. Extreme surface temperature <br>
+                </p>
+            </div>
+        </div>
+        <div><a href="https://quizizz.com/admin/quiz/670251a9d281abce344fef4d"><button style="border-radius: 15px; padding: 1rem;">QUIZ</button></a></div>
+
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('ul');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+
+</body>
+
+</html>
